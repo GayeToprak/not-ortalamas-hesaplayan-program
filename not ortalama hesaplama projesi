@@ -1,0 +1,38 @@
+package not ortalama hesaplama
+
+import java.util.Scanner;
+
+public class ortalama hesaplama{
+public static void Main(String[] args);
+
+int turkce,mat,tarih,kimya,fizik,muzik;
+
+Scanner inp = new Scanner(System.in);
+
+System.out.print("mat notunuzu giriniz");
+mat = inp.nextInp();
+
+System.out.print("turkce notunuzu giriniz");
+turkce = inp.nextInp();
+
+system.out.print("tarih notunuzu giriniz");
+tarih = inp.nextInp();
+
+System.out.print("kimya notunuzu giriniz");
+kimya = inp.nextInp();
+
+System.out.print("fizik notunuzu giriniz");
+fizik = inp.nextInp();
+
+System.out.print("muzik notunuzu giriniz");
+muzik = inp.nextInp();
+
+int toplam = (turkce+mat+tarih+fizik+kimya+muzik);
+double sonuc = toplam / 6.0; 
+
+String durum = sonuc >= 60? "tebrikler sınıfı geçtiniz" : "üzgünüm sınıfta kaldınız";
+System.out.println(durum);
+
+
+
+
